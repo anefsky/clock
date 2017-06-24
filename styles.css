@@ -1,0 +1,73 @@
+.wrapper {
+	position: relative;
+	height: 100vh;
+}
+
+.face {
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	visibility: hidden;
+}
+
+.pin {
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #444;
+	z-index: 100;
+}
+
+.hand {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 250px;
+}
+
+.hand.second {
+	width: 5px;
+	background: linear-gradient(orange 60%, orange 60%, transparent 60% );
+}
+
+.hand.minute {
+	width: 10px;
+	background: linear-gradient(orange 60%, orange 60%, transparent 60% );
+}
+
+.hand.hour {
+	width: 10px;
+	background: linear-gradient(transparent 20%, orange 20%, orange 60%, transparent 60% );
+}
+
+.tick-holder {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0;
+	height: 0px;
+	width: 0px;
+}
+
+.tick-mark {
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+	background-color: red;
+	z-index: 200;
+	position: absolute;
+}
