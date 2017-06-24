@@ -55,7 +55,7 @@ function setHandsMovement(secondHand, minuteHand, hourHand) {
 		if(minutes === 60) minutes = 0;
 		minuteHand.setPosition(minutes * 360 / 60 + seconds * 360 / (60 * 60));
 
-		if(minutes === 0) hours++;
+		if(seconds === 0 & minutes === 0) hours++;
 		if(hours === 12) hours = 0;
 		hourHand.setPosition(hours * 360 / 12 + minutes * 360 / (60 * 12) + 
 			seconds * 360 / (60 * 12 * 60));
